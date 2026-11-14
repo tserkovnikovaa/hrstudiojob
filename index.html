@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Анастасия Церковникова — HR-эксперт, карьерный консультант, психолог, коуч. Услуги для корпоративных и индивидуальных клиентов.">
+  <title>Анастасия Церковникова — HR, карьера, психология и коучинг</title>
+  <style>
+:root{--ink:#303b38;--olive:#667369;--clay:#a77b69;--paper:#f7f5f0;--pale:#ecece5;--line:#d8d8cf}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--paper)}
+a{text-decoration:none;color:inherit}
+button,a{outline-offset:3px}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#f7f5f0;padding:20px clamp(18px,5%,70px);border-bottom:1px solid var(--line)}
+.brand{font-family:Georgia,serif;font-size:18px;letter-spacing:-.5px;font-weight:bold}
+.nav{display:flex;gap:22px;align-items:center;font-size:12px}
+.nav a:hover{color:var(--clay)}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid var(--ink);padding:13px 22px;border-radius:2px;font-size:12px;letter-spacing:.02em;background:var(--ink);color:white;transition:background .2s}
+.btn:hover{background:var(--olive)}
+.btn.light{background:transparent;color:var(--ink)}
+.btn.light:hover{background:#e5e6df}
+.hero{min-height:520px;display:grid;grid-template-columns:1.12fr .88fr;align-items:stretch;background:#eeeae3}
+.hero-copy{padding:80px clamp(25px,6vw,85px) 65px;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#7b8179;font-weight:700;margin-bottom:25px}
+h1,h2,h3,p{margin:0}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:normal;letter-spacing:-.04em}
+h1{font-size:clamp(41px,5.6vw,76px);line-height:1.06;max-width:700px}
+.hero-copy>p{font-size:15px;line-height:1.8;max-width:440px;margin-top:24px;color:#505b55}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
+.portrait{background:linear-gradient(145deg,#d9d7cd,#a9ada3);position:relative;overflow:hidden;min-height:440px}
+.portrait::after{content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.35);pointer-events:none}
+.photo-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:#fff9f0;text-align:center}
+.photo-placeholder svg{width:58%;max-width:300px;height:64%;opacity:.52}
+.photo-placeholder small{font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:#e3e5dc;padding:34px 5%;gap:20px}
+.stat{border-right:1px solid #c8cec3;padding:4px 18px}
+.stat:last-child{border:0}
+.number{font-family:Georgia,serif;font-size:34px;letter-spacing:-.03em}
+.stat p{font-size:12px;color:#59635d;line-height:1.5;margin-top:5px;max-width:220px}
+.section{padding:76px clamp(20px,7%,100px)}
+.section-header{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:34px}
+h2{font-size:clamp(31px,4.5vw,56px);line-height:1.12}
+.lead{font-size:14px;line-height:1.75;color:#5e675f;max-width:470px;margin-top:17px}
+.kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--clay);margin-bottom:15px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.service{background:#fffefa;border:1px solid #e2e0d9;padding:26px 24px;min-height:230px;display:flex;flex-direction:column;align-items:flex-start}
+.service-number{font-size:11px;color:var(--clay);margin-bottom:30px}
+h3{font-family:Georgia,serif;font-size:24px;font-weight:normal;letter-spacing:-.025em;line-height:1.18}
+.service p{font-size:12px;line-height:1.75;color:#66716a;margin-top:13px}
+.service a{font-size:12px;border-bottom:1px solid var(--clay);margin-top:auto;padding-top:20px;padding-bottom:3px}
+.business{background:#f1f0ea}
+.individual{background:#e6e8df}
+.individual .service{background:#f7f8f3}
+.about{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}
+.about-photo{min-height:390px;background:linear-gradient(145deg,#aaa89d,#ddd8ca);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;color:#f4eee7;font-size:90px}
+.about-copy p{font-size:14px;line-height:1.9;color:#55615a;margin-top:17px}
+.credentials{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;line-height:1.8;color:#5b665e}
+.cases{background:#f4f1eb}
+.case{padding:23px 0;border-top:1px solid #cfcfc6;display:grid;grid-template-columns:120px 1fr;gap:24px}
+.case .tag{font-size:11px;color:var(--clay);font-weight:bold}
+.case strong{font-family:Georgia,serif;font-size:22px;font-weight:normal}
+.case p{font-size:12px;line-height:1.7;color:#667069;margin-top:8px}
+.trust{background:#e5e7e0}
+.company-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.company{padding:13px 18px;border:1px solid #c6cbc1;background:#f1f2ec;font-family:Georgia,serif;font-size:17px}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:28px}
+.link-card{border-top:1px solid #caccc4;padding:20px 0;display:flex;justify-content:space-between;gap:15px;align-items:flex-start}
+.link-card span{font-size:12px;line-height:1.5;max-width:450px}
+.link-card b{font-size:15px;color:var(--clay)}
+.link-card:hover{color:var(--clay)}
+.cta{text-align:center;background:#303c38;color:#f6f4ed;padding:70px 25px}
+.cta h2{max-width:690px;margin:auto}
+.cta p{font-size:13px;line-height:1.8;margin:20px auto 25px;max-width:450px;color:#cbd4ca}
+.cta .btn{background:#e9ede5;color:#334039;border-color:#e9ede5}
+.cta .btn.light{background:transparent;color:#f6f4ed;border-color:#c4c8c0}
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;background:#25302d;color:#bfc7be;padding:25px 6%;font-size:11px}
+.footer a{text-decoration:underline;text-underline-offset:3px}
+.mobile-details{display:none}
+@media(max-width:800px){
+.nav{display:none}
+.mobile-details{display:block;position:relative}
+.mobile-details summary{cursor:pointer;font-size:14px}
+.mobile-links{position:absolute;right:0;z-index:20;width:220px;background:#f7f5f0;border:1px solid #ddd;padding:12px;box-shadow:0 10px 20px #0001}
+.mobile-links a{display:block;padding:10px;font-size:12px}
+.hero{grid-template-columns:1fr}
+.hero-copy{padding:55px 27px}
+.portrait{min-height:360px}
+.stats{padding:22px 10px;gap:0}
+.number{font-size:25px}
+.stat{padding:8px 9px}
+.stat p{font-size:10px}
+.section{padding:55px 22px}
+.grid3,.grid2{grid-template-columns:1fr}
+.service{min-height:190px}
+.service-number{margin-bottom:17px}
+.about{grid-template-columns:1fr;gap:24px}
+.about-photo{min-height:240px}
+.case{grid-template-columns:1fr;gap:8px}
+.links{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a href="#home" class="brand">Анастасия Церковникова<span style="color:#af806c">.</span></a>
+  <nav class="nav">
+    <a href="#about">Обо мне</a><a href="#business">Для бизнеса</a><a href="#personal">Для частных клиентов</a><a href="#results">Опыт</a><a href="#contact">Контакты</a>
+  </nav>
+  <details class="mobile-details"><summary>☰ Меню</summary><div class="mobile-links"><a href="#about">Обо мне</a><a href="#business">Корпоративным клиентам</a><a href="#personal">Индивидуальным клиентам</a><a href="#results">Опыт</a><a href="#contact">Контакты</a></div></details>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">HR-эксперт · Карьерный консультант · Психолог · Коуч</div>
+    <h1>Работаю с людьми. Помогаю решать задачи бизнеса и жизни.</h1>
+    <p>Подбор и развитие персонала, карьерные решения, коучинг и психологическое консультирование. За каждым запросом — конкретный человек, его ситуация и цели.</p>
+    <div class="actions"><a class="btn" href="#business">Для бизнеса</a><a class="btn light" href="#personal">Для себя</a></div>
+  </div>
+  <div class="portrait">
+    <div class="photo-placeholder">
+      <svg viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M75 115C72 58 104 26 153 25C212 23 231 72 223 128L213 182L231 221L264 331H37L74 221L88 184L75 115Z" stroke="currentColor" stroke-width="2"/><path d="M99 91C117 72 137 88 160 77C185 66 196 80 202 111C207 142 195 171 163 186C128 190 105 159 99 132Z" stroke="currentColor" stroke-width="2"/><path d="M111 182L147 224L190 183M84 217L131 332M217 217L171 332" stroke="currentColor" stroke-width="2"/></svg>
+      <small>Портрет для первого экрана</small>
+    </div>
+  </div>
+</section>
+<div class="stats">
+  <div class="stat"><div class="number">15+</div><p>лет опыта в HR и управлении персоналом</p></div>
+  <div class="stat"><div class="number">20 000+</div><p>интервью за профессиональную практику</p></div>
+  <div class="stat"><div class="number">2</div><p>направления: бизнес и индивидуальная работа</p></div>
+</div>
+<section id="business" class="section business">
+  <div class="section-header"><div><div class="kicker">01 / Корпоративным клиентам</div><h2>Люди и процессы,<br>которые работают на бизнес</h2><p class="lead">Помогаю собственникам и руководителям решать HR-задачи — от поиска нужного специалиста до развития команд и управленческих процессов.</p></div></div>
+  <div class="grid3">
+    <article class="service"><div class="service-number">01</div><h3>Подбор персонала</h3><p>Поиск специалистов и руководителей, оценка кандидатов. Полный цикл или помощь на отдельных этапах подбора.</p><a href="mailto:tserkovnikovaa@gmail.com?subject=Запрос%20на%20подбор%20персонала">Обсудить подбор ↗</a></article>
+    <article class="service"><div class="service-number">02</div><h3>HR-консалтинг</h3><p>Адаптация, мотивация, оценка персонала, HR-аудит, развитие процессов и инструментов управления эффективностью.</p><a href="mailto:tserkovnikovaa@gmail.com?subject=HR-консалтинг">Обсудить проект ↗</a></article>
+    <article class="service"><div class="service-number">03</div><h3>Развитие команд</h3><p>Командные сессии, тренинги, диагностика командных ролей, развитие руководителей и управленческий коучинг.</p><a href="mailto:tserkovnikovaa@gmail.com?subject=Развитие%20команды">Обсудить задачу ↗</a></article>
+  </div>
+</section>
+<section id="personal" class="section individual">
+  <div class="section-header"><div><div class="kicker">02 / Индивидуальным клиентам</div><h2>Работа с карьерой.<br>Работа с собой.</h2><p class="lead">Помогаю разобраться в профессиональных и личных вопросах, найти подходящие решения и двигаться дальше в своем темпе.</p></div></div>
+  <div class="grid2">
+    <article class="service"><div class="service-number">01</div><h3>Карьерное консультирование</h3><p>Определение сильных сторон, карьерная стратегия, профессиональное самоопределение, смена направления и карьерный рост.</p><a href="https://t.me/tser_a" target="_blank" rel="noopener noreferrer">Узнать подробнее ↗</a></article>
+    <article class="service"><div class="service-number">02</div><h3>Поиск работы и резюме</h3><p>Разработка резюме, подготовка к интервью, самопрезентация и индивидуальное сопровождение трудоустройства.</p><a href="https://t.me/tser_a" target="_blank" rel="noopener noreferrer">Узнать подробнее ↗</a></article>
+    <article class="service"><div class="service-number">03</div><h3>Индивидуальный коучинг</h3><p>Цели, решения, профессиональная и личная реализация, новые стратегии действий и движение к изменениям.</p><a href="https://t.me/tser_a" target="_blank" rel="noopener noreferrer">Узнать подробнее ↗</a></article>
+    <article class="service"><div class="service-number">04</div><h3>Психологическое консультирование</h3><p>Тревожность, самооценка, отношения, выгорание, прокрастинация и сложности с неопределенностью.</p><a href="https://t.me/tser_a" target="_blank" rel="noopener noreferrer">Узнать подробнее ↗</a></article>
+  </div>
+</section>
+<section id="about" class="section about">
+  <div class="about-photo"><span>АЦ</span></div>
+  <div class="about-copy">
+    <div class="kicker">Немного обо мне</div><h2>Опыт, который соединяет HR и психологию</h2>
+    <p>Мой профессиональный путь — от рекрутера до HR-директора. Я работала с компаниями разных отраслей и масштаба, а с 2024 года развиваю собственную практику.</p>
+    <p>Со временем к HR-экспертизе добавились карьерное консультирование, коучинг и психология. Сегодня эти направления позволяют мне смотреть на запросы с разных сторон — через бизнес, профессиональные задачи и самого человека.</p>
+    <div class="credentials">Член Ассоциации карьерного консультирования и сопровождения и Ассоциации когнитивно-поведенческой психотерапии. Спикер профессиональных мероприятий, приглашенный корпоративный тренер.</div>
+  </div>
+</section>
+<section id="results" class="section cases">
+  <div class="kicker">Опыт и результаты</div><h2>Не только подход.<br>Конкретные задачи и решения.</h2><p class="lead" style="margin-bottom:34px">Несколько примеров из моей практики.</p>
+  <div class="case"><div class="tag">Для бизнеса</div><div><strong>Подбор команды для «Акме-Дизайн»</strong><p>В рамках сотрудничества закрывались коммерческие, административные и маркетинговые вакансии. Компания подтвердила результаты рекомендательным письмом.</p></div></div>
+  <div class="case"><div class="tag">Для бизнеса</div><div><strong>Технический подбор для «Яблочков»</strong><p>Поиск специалистов C++ и инженеров по тестированию для компании-разработчика зарядных станций.</p></div></div>
+  <div class="case"><div class="tag">Для клиентов</div><div><strong>Новая работа после долгого периода в одной компании</strong><p>Работа с профессиональным позиционированием, резюме и собеседованиями. Результат одного из кейсов — оффер с окладом в 1,5 раза выше.</p></div></div>
+  <div class="case"><div class="tag">Для клиентов</div><div><strong>Решение остаться и расти</strong><p>Иногда задача не в смене работы. В одном из карьерных кейсов клиентка пересмотрела возможности на текущем месте и составила план развития.</p></div></div>
+</section>
+<section class="section trust">
+  <div class="kicker">Доверие и профессиональный опыт</div><h2>Компании и проекты</h2><p class="lead">Опыт работы внутри компаний и в качестве внешнего HR-партнера.</p>
+  <div class="company-list"><span class="company">Игора</span><span class="company">Игора Драйв</span><span class="company">Яблочков</span><span class="company">Акме-Дизайн</span><span class="company">ГК КБС</span><span class="company">Север-Метрополь</span><span class="company">SkySoul Resort</span></div>
+  <p style="font-size:12px;line-height:1.75;color:#667169;margin-top:24px">Отзывы и рекомендации можно посмотреть на профессиональных площадках.</p>
+  <div class="actions" style="margin-top:14px"><a class="btn light" href="https://profi.ru/profile/TserkovnikovaAS/" target="_blank" rel="noopener noreferrer">Отзывы на Profi.ru ↗</a><a class="btn light" href="https://www.b17.ru/tserkovnikova_anastasiya/" target="_blank" rel="noopener noreferrer">Профиль B17 ↗</a></div>
+</section>
+<section class="section">
+  <div class="kicker">Публичная деятельность</div><h2>Выступления и материалы</h2><p class="lead">Делюсь практикой и наблюдениями о работе, людях, карьере и развитии.</p>
+  <div class="links">
+    <a class="link-card" target="_blank" rel="noopener noreferrer" href="https://spb.aif.ru/society/komitet-po-razvitiyu-kurortov-rossii-provel-svoe-pervoe-zasedanie-na-mpps"><span>Международный Петербургский PR-саммит — инвестиции в человеческий капитал, 2026</span><b>↗</b></a>
+    <a class="link-card" target="_blank" rel="noopener noreferrer" href="https://disk.yandex.ru/i/UXsr4xgUqNqjYQ"><span>Вебинар «Как нанимать и удерживать сотрудников»</span><b>↗</b></a>
+    <a class="link-card" target="_blank" rel="noopener noreferrer" href="https://vkvideo.ru/video-224477677_456239073?t=30m21s"><span>«Роль HR: от подбора персонала до развития корпоративной культуры»</span><b>↗</b></a>
+    <a class="link-card" target="_blank" rel="noopener noreferrer" href="https://hrtime.ru/material/model-kompetentsiy-sovremennogo-hr-menedzhera-119813/"><span>Статья «Модель компетенций современного HR-менеджера»</span><b>↗</b></a>
+  </div>
+</section>
+<section id="contact" class="cta">
+  <div class="kicker" style="color:#abb9ae">Контакты</div><h2>Обсудим вашу задачу?</h2><p>Расскажите, с чем хотите разобраться. Выберем подходящий формат работы — для бизнеса или для себя.</p>
+  <div class="actions" style="justify-content:center"><a class="btn" href="https://t.me/tser_a" target="_blank" rel="noopener noreferrer">Написать в Telegram ↗</a><a class="btn light" href="mailto:tserkovnikovaa@gmail.com?subject=Запрос%20с%20сайта">Написать на почту ↗</a></div><p style="font-size:12px;margin-top:26px">Санкт-Петербург · очно и онлайн</p>
+</section>
+</main>
+<footer class="footer"><span>© Анастасия Церковникова · Персональный сайт</span><span><a href="tel:+79217783787">+7 (921) 778-37-87</a> · <a href="mailto:tserkovnikovaa@gmail.com">E-mail</a></span></footer>
+</body>
+</html>
